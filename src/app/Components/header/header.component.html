@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+	<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu">
+		<mat-icon>menu</mat-icon>
+	</button>
+	<span>Projeto Padawan</span>
+	<button mat-icon-button (click)="redirectHome()" aria-label="Home" class="home">
+        <mat-icon>home</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+	<button mat-menu-item (click)="openPosts()">
+	  <mat-icon>chat</mat-icon>
+	  <span>Postagens</span>
+	</button>
+	<button mat-menu-item (click)="openAlbums()">
+	  <mat-icon>library_music</mat-icon>
+	  <span>Albums</span>
+	</button>
+	<button mat-menu-item (click)="openToDo()">
+	  <mat-icon>receipt_long</mat-icon>
+	  <span>To-do list</span>
+	</button>
+  </mat-menu>
+
