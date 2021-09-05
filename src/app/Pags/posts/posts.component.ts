@@ -4,7 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { AppService } from 'src/app/Service/app.service';
 
-export interface UserData {
+export interface UserPosts {
   id: number;
   body: string;
   title: string;
@@ -19,7 +19,7 @@ export interface UserData {
 export class PostsComponent implements OnInit {
   posts: any;
   displayedColumns: string[] = ['id', 'userId', 'title', 'body'];
-  dataSource: MatTableDataSource<UserData>;
+  dataSource: MatTableDataSource<UserPosts>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;

@@ -36,12 +36,12 @@ export class AlbumsComponent implements OnInit {
     })
   }
     
-    filtrar(event: Event) {
-      const filterValue = (event.target as HTMLInputElement).value;
-      this.dataSource.filter = filterValue.trim().toLowerCase();
+  filtrar(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   
-      if (this.dataSource.paginator) {
+    if (this.dataSource.paginator) {
         this.dataSource.paginator.firstPage();
-      }
+    }
   }
 }

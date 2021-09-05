@@ -16,18 +16,15 @@ export const AppRoutes: Routes = [
     component: HomeComponent
   },
   {
-      path: 'todos',
-      component: TodosComponent
+    path: 'todos',
+    component: TodosComponent
   },
   {
-      path: 'albums',
-      component: AlbumsComponent
-
+    path: 'albums',
+    component: AlbumsComponent
   },
   {
-      path: 'posts',
-      component: PostsComponent
-
+    path: 'posts',
+    component: PostsComponent
   }
-
 ]
